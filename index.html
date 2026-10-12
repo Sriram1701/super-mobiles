@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mobiles | Best Phone Sales & Repair Service in Cuddalore Old Town</title>
+    <meta name="description" content="Super Mobiles by Bharath - Fast & reliable mobile repair, screen replacement, battery swap, chip-level motherboard repair, and software solutions in Cuddalore Old Town. Shop No 2, Imperial Road.">
+    <meta name="keywords" content="Super Mobiles Cuddalore, Phone repair Cuddalore Old Town, iPhone repair Cuddalore, Imperial Road mobile shop, Bharath Super Mobiles, display replacement Cuddalore">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span class="top-loc-full"><i class="fa-solid fa-location-dot"></i> Shop No 2, Imperial Road, Cuddalore Old Town (Near Manikundu, Opp. Narayana Sesa Mahal)</span>
+                <span class="top-loc-mobile"><i class="fa-solid fa-location-dot"></i> Imperial Road, Cuddalore OT</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-hours"><i class="fa-solid fa-clock"></i> 9:00 AM - 9:30 PM</span>
+                <a href="tel:+919876543210" class="top-phone"><i class="fa-solid fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">SUPER MOBILES</span>
+                    <span class="brand-tagline">SALES & SERVICE • CUDDALORE</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <div class="nav-menu-header">
+                    <div class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="logo-text">
+                            <span class="brand-name">SUPER MOBILES</span>
+                            <span class="brand-tagline">SALES & SERVICE</span>
+                        </div>
+                    </div>
+                    <button class="nav-close-btn" id="navCloseBtn" aria-label="Close Menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="nav-links-wrap">
+                    <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#services" class="nav-link"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a>
+                    <a href="#why-us" class="nav-link"><i class="fa-solid fa-shield-halved"></i> Why Choose Us</a>
+                    <a href="#owner" class="nav-link"><i class="fa-solid fa-user-gear"></i> Meet Bharath</a>
+                    <a href="#reviews" class="nav-link"><i class="fa-solid fa-star"></i> Reviews</a>
+                    <a href="#contact" class="nav-link"><i class="fa-solid fa-location-dot"></i> Contact & Location</a>
+                </div>
+                <div class="nav-drawer-actions">
+                    <button class="btn btn-primary btn-block" onclick="openBookingModal(); closeNavMenu();">
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Book Repair Service
+                    </button>
+                    <a href="https://wa.me/919876543210?text=Hi%20Bharath,%20I%20have%20an%20inquiry%20about%20my%20mobile%20phone%20repair." target="_blank" class="btn btn-whatsapp btn-block">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <a href="tel:+919876543210" class="nav-drawer-phone">
+                        <i class="fa-solid fa-phone"></i> Call: +91 98765 43210
+                    </a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/919876543210?text=Hi%20Bharath,%20I%20have%20an%20inquiry%20about%20my%20mobile%20phone%20repair." target="_blank" class="btn btn-whatsapp-header nav-desktop-only">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+                </a>
+                <button class="btn btn-primary nav-book-btn" onclick="openBookingModal()">
+                    <i class="fa-solid fa-screwdriver-wrench"></i> <span class="nav-book-text">Book Repair</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars" id="toggleIcon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-pill">
+                    <span class="badge-dot"></span>
+                    <span>#1 Rated Phone Service Center in Cuddalore</span>
+                </div>
+                <h1 class="hero-title">
+                    Express Mobile Repair & Genuine Sales <span class="gradient-text">In Cuddalore Old Town</span>
+                </h1>
+                <p class="hero-description">
+                    Broken screen? Drained battery? Water damage or software issues? <strong>Bharath & Super Mobiles</strong> provides express 30-minute repair solutions with original parts and 100% transparency.
+                </p>
+
+                <div class="hero-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">30<span class="unit">Mins</span></div>
+                        <div class="stat-label">Express Screen Fix</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5,000<span class="unit">+</span></div>
+                        <div class="stat-label">Phones Serviced</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4.9<span class="unit">★</span></div>
+                        <div class="stat-label">Google Rating</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100<span class="unit">%</span></div>
+                        <div class="stat-label">Genuine Spares</div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn btn-lg btn-primary" onclick="openBookingModal()">
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Book Repair Service
+                    </button>
+                    <a href="https://wa.me/919876543210?text=Hi%20Bharath,%20I%20want%20to%20know%20repair%20charges%20for%20my%20mobile." target="_blank" class="btn btn-lg btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Chat With Bharath
+                    </a>
+                </div>
+            </div>
+
+            <!-- HERO VISUAL CARD -->
+            <div class="hero-visual">
+                <div class="hero-card-glass">
+                    <div class="shop-badge">
+                        <i class="fa-solid fa-store"></i> Super Mobiles Workshop
+                    </div>
+                    <div class="visual-header">
+                        <div class="avatar-box">
+                            <div class="avatar-img">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <div>
+                                <h4>Bharath</h4>
+                                <p class="text-sm">Owner & Master Repair Specialist</p>
+                            </div>
+                        </div>
+                        <div class="status-online">
+                            <span class="dot-green"></span> Shop Open Now
+                        </div>
+                    </div>
+
+                    <div class="visual-poster-quote">
+                        <div class="quote-tag">"Fixing Phones • Building Dreams"</div>
+                        <p>Specialized in iPhone, Samsung, OnePlus, Redmi, Vivo, Oppo, Realme & All Android Brands.</p>
+                    </div>
+
+                    <div class="service-tags-scroll">
+                        <span class="tag"><i class="fa-solid fa-mobile-screen-button"></i> OLED / AMOLED Display</span>
+                        <span class="tag"><i class="fa-solid fa-battery-full"></i> Battery Boost</span>
+                        <span class="tag"><i class="fa-solid fa-microchip"></i> Motherboard IC Fix</span>
+                        <span class="tag"><i class="fa-solid fa-code"></i> Software Unlocking</span>
+                        <span class="tag"><i class="fa-solid fa-droplet"></i> Water Damage Recovery</span>
+                    </div>
+
+                    <div class="location-mini-card">
+                        <i class="fa-solid fa-location-crosshairs icon-accent"></i>
+                        <div>
+                            <strong>Imperial Road, Cuddalore Old Town</strong>
+                            <p class="text-xs">Near Manikundu Tea Time | Opp. Narayana Sesa Mahal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES OFFERED SECTION -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-subtitle">EXPERT SOLUTIONS</div>
+                <h2 class="section-title">Our Repair & Sales Services</h2>
+                <p class="section-desc">From minor touch glass replacements to complex IC soldering and software flashing, we handle everything under one roof in Cuddalore Old Town.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- CARD 1 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper color-cyan">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>Display & Glass Replacement</h3>
+                    <p>Accidental drop? We replace broken LCDs, Curved AMOLED panels, and original touch glass with zero display lines and vivid colors.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Original & Compatible Screens</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Curved AMOLED Glass Separation</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Touch IC & TrueTone Programming</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 30-45 Mins</span>
+                        <button class="service-btn" onclick="quickBook('Display Replacement')">Book Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper color-emerald">
+                        <i class="fa-solid fa-battery-charging"></i>
+                    </div>
+                    <h3>Battery Replacement & Health</h3>
+                    <p>Phone discharging quickly or heating up? Get genuine high-capacity batteries installed in minutes with 100% health boost.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-circle-check"></i> 100% Health Restoration</li>
+                        <li><i class="fa-solid fa-circle-check"></i> High-Density Lithium Cells</li>
+                        <li><i class="fa-solid fa-circle-check"></i> 3 to 6 Months Replacement Warranty</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 20-30 Mins</span>
+                        <button class="service-btn" onclick="quickBook('Battery Replacement')">Book Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper color-violet">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3>Chip-Level Motherboard Repair</h3>
+                    <p>Phone dead or not turning on? Specialised micro-soldering for Power IC, Charging IC, CPU reballing, and board short circuit fixes.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Digital Microscope Inspection</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Dead Phone Recovery</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Network & Audio IC Repair</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> Same Day</span>
+                        <button class="service-btn" onclick="quickBook('Motherboard IC Repair')">Book Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper color-amber">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>Software, Bootloop & Unlocking</h3>
+                    <p>Stuck on logo? Network locked or forgotten pattern password? Safe OS flashing, bootloop repair, and FRP unlocking services.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Official Stock ROM Flashing</li>
+                        <li><i class="fa-solid fa-circle-check"></i> FRP & Password Recovery</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Data Backup & Recovery</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 30-60 Mins</span>
+                        <button class="service-btn" onclick="quickBook('Software Service')">Book Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper color-rose">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h3>Water & Liquid Damage Service</h3>
+                    <p>Dropped phone in water? Emergency chemical cleaning, ultrasonic bath oxidation removal, and complete board drying to save your data.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Ultrasonic Clean Tank</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Corrosion & Moisture Removal</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Data Preservation Priority</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> Express Service</span>
+                        <button class="service-btn" onclick="quickBook('Water Damage Recovery')">Book Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper color-sky">
+                        <i class="fa-solid fa-headphones"></i>
+                    </div>
+                    <h3>Mobile Accessories & Sales</h3>
+                    <p>Explore top-tier mobile accessories including 11D UV tempered glass, premium shockproof back covers, fast chargers, cables, and TWS earbuds.</p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-circle-check"></i> 11D Tempered Glass Installation</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Fast Chargers & Type-C Cables</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Bluetooth Neckbands & Earbuds</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> In Store</span>
+                        <button class="service-btn" onclick="quickBook('Mobile Accessories')">Explore Shop <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section section-dark" id="why-us">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-subtitle">THE SUPER MOBILES PROMISE</div>
+                <h2 class="section-title">Why Cuddalore Trusts Super Mobiles</h2>
+                <p class="section-desc">We combine technical expertise, genuine components, and friendly local service to deliver the best mobile repair experience.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                    <h4>30-Minute Express Fix</h4>
+                    <p>Most screen and battery replacements are completed right in front of you while you wait!</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-cat"></i></div>
+                    <h4>100% Genuine Spares</h4>
+                    <p>We source authentic displays, ICs, and batteries directly to ensure long-lasting performance.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h4>Transparent Live Repair</h4>
+                    <p>No hidden charges. Watch your device get diagnosed and repaired with complete open honesty.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-tags"></i></div>
+                    <h4>Affordable Local Pricing</h4>
+                    <p>Best competitive pricing in Cuddalore Old Town without compromising on component quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET BHARATH & STORE POSTER SECTION -->
+    <section class="section section-owner" id="owner">
+        <div class="container">
+            <div class="owner-grid">
+                <div class="owner-card-poster">
+                    <div class="poster-graphic">
+                        <div class="poster-avatar-ring">
+                            <i class="fa-solid fa-user-ninja"></i>
+                        </div>
+                        <div class="poster-badge">SUPER MOBILES & SERVICE</div>
+                        <h3>Bharath</h3>
+                        <p class="tagline">"Fixing Phones • Building Dreams"</p>
+                        <div class="quote-cloud">
+                            <span>☕ Coffee + Repair = Happy Me</span>
+                        </div>
+                        <div class="poster-pills">
+                            <span>✨ Screen</span>
+                            <span>⚡ Battery</span>
+                            <span>💻 Software</span>
+                            <span>🎧 Accessories</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owner-bio">
+                    <div class="section-subtitle">MEET THE EXPERT</div>
+                    <h2 class="section-title">Hello! I'm Bharath</h2>
+                    <p class="lead-text">Welcome to <strong>Super Mobiles</strong> in Cuddalore Old Town. We believe in providing honest, high-quality, and friendly service to every customer who walks through our doors.</p>
+                    
+                    <p>Whether your smartphone's display is smashed, the battery dies in hours, or it fell into water, you don't need to panic. With over 8+ years of chip-level repairing experience, I personally inspect every single device and fix it with extreme care.</p>
+
+                    <div class="owner-highlights">
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-heart icon-accent"></i>
+                            <div>
+                                <strong>Good Vibes Only</strong>
+                                <p>Relax with a tea or coffee while your mobile phone gets fixed in our workshop.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-handshake icon-accent"></i>
+                            <div>
+                                <strong>Warranty Guarantee</strong>
+                                <p>All repairs come with full service warranty support and free post-repair checkups.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="owner-cta">
+                        <a href="tel:+919876543210" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call Bharath (+91 9876543210)</a>
+                        <a href="https://wa.me/919876543210?text=Hello%20Bharath!" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS & GOOGLE RATING -->
+    <section class="section" id="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-subtitle">HAPPY CUSTOMERS</div>
+                <h2 class="section-title">Google Customer Reviews</h2>
+                <div class="rating-summary">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span><strong>4.9 / 5.0</strong> based on 340+ Cuddalore reviews</span>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- REVIEW 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">K</div>
+                        <div>
+                            <h4>Karthik Raja</h4>
+                            <p class="text-xs">Cuddalore Old Town • 2 days ago</p>
+                        </div>
+                        <div class="g-logo"><i class="fa-brands fa-google"></i></div>
+                    </div>
+                    <div class="stars-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"My iPhone 13 display smashed completely. Super Mobiles Bharath brother replaced the OLED screen within 40 minutes at a very reasonable cost! Touch and colors are 100% original feel. Highly recommended shop near Manikundu!"</p>
+                    <div class="verified-tag"><i class="fa-solid fa-circle-check"></i> Repaired: iPhone 13 Screen</div>
+                </div>
+
+                <!-- REVIEW 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar color-2">S</div>
+                        <div>
+                            <h4>Srinivasan M.</h4>
+                            <p class="text-xs">Cuddalore OT • 1 week ago</p>
+                        </div>
+                        <div class="g-logo"><i class="fa-brands fa-google"></i></div>
+                    </div>
+                    <div class="stars-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Redmi Note 10 was completely stuck on Mi bootloop logo. Other shops asked to change board. Bharath solved software issue in 30 mins and saved all my personal photos! Super polite service."</p>
+                    <div class="verified-tag"><i class="fa-solid fa-circle-check"></i> Repaired: Software Bootloop</div>
+                </div>
+
+                <!-- REVIEW 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar color-3">A</div>
+                        <div>
+                            <h4>Anitha Selvam</h4>
+                            <p class="text-xs">Manjakuppam • 3 weeks ago</p>
+                        </div>
+                        <div class="g-logo"><i class="fa-brands fa-google"></i></div>
+                    </div>
+                    <div class="stars-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Replaced Samsung Galaxy A52 battery here. Battery backup is back to full day now. Very quick service and free screen tempered glass installation!"</p>
+                    <div class="verified-tag"><i class="fa-solid fa-circle-check"></i> Repaired: Battery Swap</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & CONTACT SECTION -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-subtitle">VISIT OUR STORE</div>
+                    <h2 class="section-title">Contact & Store Location</h2>
+                    <p>Drop by our shop in Cuddalore Old Town for a free device diagnostic & instant quote!</p>
+
+                    <div class="contact-card-box">
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fa-solid fa-shop"></i></div>
+                            <div>
+                                <h4>Shop Address</h4>
+                                <p><strong>Super Mobiles (Sales & Service)</strong><br>Shop No. 2, Imperial Road, Cuddalore Old Town<br>(Near Manikundu Tea Time, Opposite Narayana Sesa Mahal)<br>Cuddalore - 607003, Tamil Nadu</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4>Phone & WhatsApp</h4>
+                                <p><a href="tel:+919876543210">+91 98765 43210</a> / <a href="tel:+919876543211">+91 98765 43211</a></p>
+                                <p class="text-xs text-muted">Owner: Bharath</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday to Sunday: <strong>9:00 AM – 9:30 PM</strong> (Open All Days)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="directions-btn-group">
+                        <a href="https://maps.google.com/?q=Imperial+Road+Cuddalore+Old+Town" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-diamond-turn-right"></i> Get Directions on Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- QUICK REPAIR BOOKING FORM -->
+                <div class="contact-form-card">
+                    <h3><i class="fa-solid fa-paper-plane"></i> Quick Booking Form</h3>
+                    <p class="text-sm">Submit your issue and we'll keep the required spare part ready before you arrive!</p>
+                    
+                    <form id="bookingForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="custName">Your Name *</label>
+                            <input type="text" id="custName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="custPhone">Phone Number *</label>
+                            <input type="tel" id="custPhone" class="form-control" placeholder="10-digit mobile number" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formBrand">Brand</label>
+                                <input type="text" id="formBrand" class="form-control" placeholder="e.g. iPhone, Redmi, Samsung">
+                            </div>
+                            <div class="form-group">
+                                <label for="formModel">Model</label>
+                                <input type="text" id="formModel" class="form-control" placeholder="e.g. iPhone 13, Note 10">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formIssue">Describe Issue *</label>
+                            <textarea id="formIssue" class="form-control" rows="3" placeholder="e.g. Broken screen, battery draining fast, water damage..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">
+                            <i class="fa-solid fa-check"></i> Submit Booking
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <span class="brand-name">SUPER MOBILES</span>
+                </div>
+                <p>Sales and Service by Bharath. Shop No 2, Imperial Road, Cuddalore Old Town (Near Manikundu Tea Time) opposite Narayana Sesa Mahal.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/919876543210" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#owner">Meet Bharath</a></li>
+                    <li><a href="#contact">Store Location</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Popular Repairs</h4>
+                <ul>
+                    <li><a href="#services">iPhone Screen Fix</a></li>
+                    <li><a href="#services">Samsung Battery Swap</a></li>
+                    <li><a href="#services">OnePlus Display Replace</a></li>
+                    <li><a href="#services">Redmi Software Bootloop</a></li>
+                    <li><a href="#services">Chip-Level Motherboard IC</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Super Mobiles Cuddalore. All Rights Reserved. Designed with ❤️ for Bharath.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL FOR BOOKING -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <div class="modal-header">
+                <i class="fa-solid fa-screwdriver-wrench icon-accent-lg"></i>
+                <h3>Book Mobile Repair</h3>
+                <p class="text-sm">Reserve your repair slot with Bharath at Super Mobiles Cuddalore.</p>
+            </div>
+            <div class="modal-body">
+                <div id="modalSummaryBox" class="modal-summary-box">
+                    <strong>Selected Service:</strong> <span id="modalServiceText">General Inspection</span>
+                </div>
+                <div class="form-group">
+                    <label>Customer Name</label>
+                    <input type="text" id="modalName" class="form-control" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input type="tel" id="modalPhone" class="form-control" placeholder="10-digit phone number">
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-whatsapp btn-block" onclick="submitModalWhatsApp()">
+                        <i class="fa-brands fa-whatsapp"></i> Confirm & Send on WhatsApp
+                    </button>
+                    <button class="btn btn-secondary btn-block" onclick="closeBookingModal()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BUTTONS (DESKTOP) -->
+    <div class="floating-actions">
+        <a href="tel:+919876543210" class="float-btn float-call" title="Call Bharath Now" aria-label="Call Bharath">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://wa.me/919876543210?text=Hi%20Bharath,%20I%20need%20assistance%20with%20my%20phone%20repair." target="_blank" class="float-btn float-wa" title="WhatsApp Us" aria-label="WhatsApp Super Mobiles">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- MOBILE BOTTOM STICKY ACTION BAR -->
+    <nav class="mobile-bottom-bar" aria-label="Mobile Quick Actions">
+        <a href="tel:+919876543210" class="bottom-bar-item" id="mobileBarCall">
+            <div class="bottom-bar-icon"><i class="fa-solid fa-phone"></i></div>
+            <span>Call</span>
+        </a>
+        <a href="https://wa.me/919876543210?text=Hi%20Bharath,%20I%20need%20assistance%20with%20my%20phone%20repair." target="_blank" class="bottom-bar-item bottom-bar-wa" id="mobileBarWa">
+            <div class="bottom-bar-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <span>WhatsApp</span>
+        </a>
+        <button type="button" class="bottom-bar-item bottom-bar-cta" onclick="openBookingModal()" id="mobileBarBook">
+            <div class="bottom-bar-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <span>Book Repair</span>
+        </button>
+        <a href="https://maps.google.com/?q=Imperial+Road+Cuddalore+Old+Town" target="_blank" class="bottom-bar-item" id="mobileBarMap">
+            <div class="bottom-bar-icon"><i class="fa-solid fa-location-arrow"></i></div>
+            <span>Map</span>
+        </a>
+    </nav>
+
+    <!-- CUSTOM JS -->
+    <script src="script.js"></script>
+</body>
+</html>
